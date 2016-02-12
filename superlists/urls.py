@@ -4,6 +4,7 @@ from lists import views
 
 urlpatterns = [
     url(r'^$', views.home_page, name='home'),
+    url(r'^lists/list1/$', views.view_list, name='view_list'),
     # url(r'^admin/', include(admin.site.urls)),
 ]
 
