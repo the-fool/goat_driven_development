@@ -14,11 +14,11 @@ class NewVisitorTest(StaticLiveServerTestCase):
         super().setUpClass()
         cls.server_url = cls.live_server_url
 
-    @classmethod
+    """@classmethod
     def tearDownClass(cls):
         if hasattr(cls, 'server_thread'):
             # Terminate the live server's thread
-            cls.server_thread.join()
+            cls.server_thread.join()"""
 
     def setUp(self):
         self.browser = webdriver.Firefox()
